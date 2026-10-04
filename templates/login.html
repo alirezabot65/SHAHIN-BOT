@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8"><title>ورود</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<div class="card">
+<h2>اتصال ربات</h2>
+<p>برای ورود، فقط توکن ربات روبیکا را وارد کنید.</p>
+<form method="post">
+<input name="token" type="password" placeholder="توکن ربات" required>
+<button class="btn" type="submit">اتصال و ورود</button>
+</form>
+{% with messages=get_flashed_messages() %}
+{% for m in messages %}<div class="error">{{m}}</div>{% endfor %}
+{% endwith %}
+</div>
+</body></html>
